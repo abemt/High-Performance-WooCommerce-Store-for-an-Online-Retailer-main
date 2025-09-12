@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxe Performance Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#1a1a1a',
+              'brand-secondary': '#f0f0f0',
+              'brand-accent': '#4a90e2',
+              'brand-light': '#ffffff',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            keyframes: {
+              shimmer: {
+                '100%': { transform: 'translateX(100%)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.19",
+    "react-hot-toast": "https://aistudiocdn.com/react-hot-toast@^2.4.2",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.418.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-secondary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
